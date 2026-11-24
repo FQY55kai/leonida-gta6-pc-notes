@@ -1,7 +1,7 @@
 # `game_scarlett_master.exe` 反编译 / 静态分析报告
 
 **生成时间**：2026-11-24 14:0x（无人值守阶段）
-**对象**：`<game-dir>\game_scarlett_master.exe`（120,181,760 B / 114.61 MiB）
+**对象**：`C:\boottest\game_scarlett_master.exe`（120,181,760 B / 114.61 MiB）
 **原始数据**：`game_scarlett_pe_static.txt`（`pe_static_analysis.py` 解析结果）
 **方法边界**：本机无 Ghidra/IDA；镜像含 **299,257 个函数**（`.pdata`），全量反编译不现实且无符号。因此采用**结构化 PE 解析 + 定点反汇编（cdb）+ 人工还原伪代码**，重点覆盖当前启动调试实际走到的函数。静态分析用于**佐证常量、函数边界与调用形状**，动态调试（cdb）仍是主线。
 
