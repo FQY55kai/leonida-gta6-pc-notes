@@ -1,0 +1,10 @@
+.echo ===AUTO48: current assert location after rollback===
+sxe av
+sxe 80000003
+g
+.echo ===ASSERT===
+r
+u rip-40 L24
+.echo ===STACK===
+kb
+q

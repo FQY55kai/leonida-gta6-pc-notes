@@ -1,0 +1,23 @@
+.echo ===AUTO45: verify the actual call target===
+sxe av
+sxe 80000003
+bm gta6rt!*D3D12XboxCreateDevice*
+g
+.echo ===ANCHOR===
+bc *
+ba e 1 00000001419f4f4f
+g
+.echo ===AT_CALL===
+r
+u rip L5
+t
+.echo ===STEPPED_IN===
+r
+u rip L12
+bc *
+bp 00000001419f4f58 ".echo ===FINAL_ASSERT===; r"
+g
+.echo ===DONE===
+u 0000000142478440 L6
+u 00000001419f4f40 L12
+q

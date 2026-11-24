@@ -1,0 +1,9 @@
+.echo ===AUTO49: full big-init disassembly===
+sxe av
+sxe 80000003
+g
+.echo ===FULL_FUNC===
+u 0000000142478440 0000000142479682
+.echo ===HELPER_14161cef0===
+u 000000014161cef0 000000014161d060
+q

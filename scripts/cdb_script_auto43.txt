@@ -1,0 +1,21 @@
+.echo ===AUTO43: trace which branch returns false===
+sxe av
+sxe 80000003
+bm gta6rt!*D3D12XboxCreateDevice*
+g
+.echo ===ANCHOR HIT - game image is mapped now===
+bc *
+bp 0000000142478440 ".echo ===ENTER_BIG_INIT===; g"
+bp 0000000142478e20 ".echo ===AFTER_SLOT79_AREA===; g"
+bp 000000014247933e ".echo ===CHECK1_CALL===; g"
+bp 0000000142479352 ".echo ===CHECK1_PASSED===; g"
+bp 0000000142479373 ".echo ===CHECK2_PASSED===; g"
+bp 000000014247961d ".echo ===TAIL_SLOT41===; g"
+bp 000000014247965d ".echo ===SLOT41_OK===; g"
+bp 00000001424787a9 ".echo ===RETURN_PATH===; r esi; g"
+bp 00000001419f4f58 ".echo ===FINAL_ASSERT===; r; kb"
+g
+.echo ===DONE===
+.echo ===0x14161cef0 disasm===
+u 000000014161cef0 L50
+q

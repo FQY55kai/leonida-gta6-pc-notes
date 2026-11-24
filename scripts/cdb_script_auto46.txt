@@ -1,0 +1,19 @@
+.echo ===AUTO46: verify decode and inspect helper===
+sxe av
+sxe 80000003
+g
+.echo ===AT_ASSERT===
+r
+.echo ===RAW BYTES 0x1419f4f40===
+db 00000001419f4f40 L32
+.echo ===DECODE 0x1419f4f40===
+u 00000001419f4f40 L16
+.echo ===FUNC 0x1424781d0===
+u 00000001424781d0 L24
+.echo ===FUNC 0x142478440===
+u 0000000142478440 L16
+.echo ===HELPER 0x14161d080===
+u 000000014161d080 L40
+.echo ===HELPER TAIL 0x14161cfd0===
+u 000000014161cfd0 L40
+q

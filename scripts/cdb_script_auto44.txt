@@ -1,0 +1,18 @@
+.echo ===AUTO44: hardware breakpoints to locate failing branch===
+sxe av
+sxe 80000003
+bm gta6rt!*D3D12XboxCreateDevice*
+g
+.echo ===ANCHOR===
+bc *
+ba e 1 0000000142478440 ".echo ===ENTER_BIG===; g"
+ba e 1 000000014247933e ".echo ===CHECK1_CALL===; g"
+ba e 1 0000000142479352 ".echo ===CHECK1_PASSED===; g"
+ba e 1 000000014247965d ".echo ===SLOT41_ALL_OK===; g"
+bp 00000001424787a9 ".echo ===RETURN_PATH===; r esi; g"
+bp 00000001419f4f58 ".echo ===FINAL_ASSERT===; r; kb"
+.echo ===BREAKPOINT LIST===
+bl
+g
+.echo ===DONE===
+q

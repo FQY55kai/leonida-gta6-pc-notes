@@ -1,0 +1,18 @@
+.echo ===AUTO42: stop at first title int3===
+sxe av
+sxe 80000003
+g
+.echo ===BREAK LOCATION===
+u 00000001419f4d80 LA0
+.echo ===REGS===
+r
+.echo ===STACK===
+kb
+.echo ===LASTEVENT===
+.lastevent
+.echo ===GUID-LIKE CONSTANTS NEAR rcx/rdx===
+dq 00000001461e0340 L8
+dq 00000001461e0360 L8
+.echo ===CALLER CHAIN SYMBOLS===
+dps @rsp L20
+q

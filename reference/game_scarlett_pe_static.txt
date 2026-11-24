@@ -1,0 +1,203 @@
+=== FILE ===
+path   : <game-dir>\game_scarlett_master.exe
+size   : 120,181,760 bytes (114.61 MiB)
+mtime  : 1795447916.002251
+e_lfanew: 0x78
+machine: 0x8664 (0x8664 = AMD64)
+sections: 10  optional header size: 240  magic: 0x20b (0x20b = PE32+)
+entry RVA  : 0x56a1ec8  -> VA 0x1456a1ec8
+image base : 0x140000000   size of image: 0xb06d000 (176.4 MiB)
+section/file alignment: 0x1000 / 0x200   headers: 0x400
+data directories: 16
+
+=== DATA DIRECTORIES ===
+  EXPORT           RVA 0x06791a50  size 0x63
+  IMPORT           RVA 0x06791ab4  size 0x564
+  EXCEPTION        RVA 0x0abcf000  size 0x36cbac
+  BASERELOC        RVA 0x0af41000  size 0x12a350
+  DEBUG            RVA 0x0678f5ac  size 0x1c
+  TLS              RVA 0x06771dd0  size 0x28
+  LOAD_CONFIG      RVA 0x06158d20  size 0x138
+  IAT              RVA 0x06793490  size 0x1478
+
+=== SECTIONS ===
+  .text    VA 0x00001000  VSize 0x05f3f966  RawPtr 0x00000400  RawSize 0x05f3fa00  flags 0x60000020
+  .rdata   VA 0x05f41000  VSize 0x008a0c0c  RawPtr 0x05f3fe00  RawSize 0x008a0e00  flags 0x40000040
+  .data    VA 0x067e2000  VSize 0x043ec398  RawPtr 0x067e0c00  RawSize 0x00622e00  flags 0xc0000040
+  .pdata   VA 0x0abcf000  VSize 0x0036cbac  RawPtr 0x06e03a00  RawSize 0x0036cc00  flags 0x40000040
+  .retplne VA 0x0af3c000  VSize 0x000000e4  RawPtr 0x07170600  RawSize 0x00000200  flags 0x00000000
+  .tls     VA 0x0af3d000  VSize 0x00001481  RawPtr 0x07170800  RawSize 0x00001600  flags 0xc0000040
+  .voltbl  VA 0x0af3f000  VSize 0x00000724  RawPtr 0x07171e00  RawSize 0x00000800  flags 0x00000000
+  .xbld    VA 0x0af40000  VSize 0x000006b9  RawPtr 0x07172600  RawSize 0x00000800  flags 0xc0000040
+  .reloc   VA 0x0af41000  VSize 0x0012a350  RawPtr 0x07172e00  RawSize 0x0012a400  flags 0x42000040
+  .xbld    VA 0x0b06c000  VSize 0x000000dc  RawPtr 0x0729d200  RawSize 0x00000200  flags 0xc2000040
+
+=== IMPORT TABLE ===
+  68 DLLs, 587 imports total
+  ADVAPI32.dll                                        3 imports
+  AcpHal.dll                                          9 imports
+  Bink2Scarlett.dll                                  23 imports
+  GameInput.dll                                       1 imports
+  MFPlat.DLL                                          6 imports
+  MFReadWrite.dll                                     1 imports
+  MSVCP140.dll                                      113 imports
+  VCRUNTIME140.dll                                   23 imports
+  VCRUNTIME140_1.dll                                  1 imports
+  WINHTTP.dll                                        15 imports
+  WS2_32.dll                                         25 imports
+  XCRDAPI.dll                                         1 imports
+  XboxBvhBuilder.dll                                  7 imports
+  amd_fidelityfx_loader_xbox.dll                      4 imports
+  api-ms-win-core-com-l1-1-0.dll                      7 imports
+  api-ms-win-core-datetime-l1-1-1.dll                 2 imports
+  api-ms-win-core-debug-l1-1-0.dll                    2 imports
+  api-ms-win-core-errorhandling-l1-1-0.dll            3 imports
+  api-ms-win-core-file-l1-1-0.dll                    22 imports
+  api-ms-win-core-file-l2-1-0.dll                     1 imports
+  api-ms-win-core-handle-l1-1-0.dll                   1 imports
+  api-ms-win-core-heap-l2-1-0.dll                     1 imports
+  api-ms-win-core-interlocked-l1-1-0.dll              1 imports
+  api-ms-win-core-libraryloader-l1-2-0.dll            8 imports
+  api-ms-win-core-libraryloader-l1-2-1.dll            1 imports
+  api-ms-win-core-localization-l1-2-0.dll             3 imports
+  api-ms-win-core-localization-l1-2-3.dll             1 imports
+  api-ms-win-core-memory-l1-1-0.dll                   3 imports
+  api-ms-win-core-namedpipe-l1-1-0.dll                2 imports
+  api-ms-win-core-processenvironment-l1-1-0.dll       1 imports
+  api-ms-win-core-processthreads-l1-1-0.dll          12 imports
+  api-ms-win-core-processthreads-l1-1-1.dll           2 imports
+  api-ms-win-core-processthreads-l1-1-2.dll           1 imports
+  api-ms-win-core-processtopology-l1-1-0.dll          2 imports
+  api-ms-win-core-profile-l1-1-0.dll                  2 imports
+  api-ms-win-core-psm-appnotify-l1-1-0.dll            2 imports
+  api-ms-win-core-psm-appnotify-l1-1-1.dll            2 imports
+  api-ms-win-core-rtlsupport-l1-1-0.dll               3 imports
+  api-ms-win-core-string-l1-1-0.dll                   2 imports
+  api-ms-win-core-string-obsolete-l1-1-0.dll          1 imports
+  api-ms-win-core-synch-l1-1-0.dll                   17 imports
+  api-ms-win-core-synch-l1-2-0.dll                    1 imports
+  api-ms-win-core-synch-l1-2-1.dll                    2 imports
+  api-ms-win-core-sysinfo-l1-1-0.dll                  6 imports
+  api-ms-win-core-sysinfo-l1-2-0.dll                  1 imports
+  api-ms-win-core-timezone-l1-1-0.dll                 2 imports
+  api-ms-win-core-windowserrorreporting-l1-1-0.dll    1 imports
+  api-ms-win-crt-convert-l1-1-0.dll                  12 imports
+  api-ms-win-crt-filesystem-l1-1-0.dll                4 imports
+  api-ms-win-crt-heap-l1-1-0.dll                      5 imports
+  api-ms-win-crt-locale-l1-1-0.dll                    2 imports
+  api-ms-win-crt-math-l1-1-0.dll                     41 imports
+  api-ms-win-crt-runtime-l1-1-0.dll                  25 imports
+  api-ms-win-crt-stdio-l1-1-0.dll                    29 imports
+  api-ms-win-crt-string-l1-1-0.dll                   31 imports
+  api-ms-win-crt-time-l1-1-0.dll                      9 imports
+  api-ms-win-crt-utility-l1-1-0.dll                   4 imports
+  bcrypt.dll                                          3 imports
+  chad.dll                                            5 imports
+  d3d12_xs.dll                                        3 imports
+  ext-ms-win-rtcore-ntuser-message-ansi-l1-1-0.dll    2 imports
+  ext-ms-win-rtcore-ntuser-message-l1-1-0.dll         1 imports
+  ext-ms-win-rtcore-ntuser-window-ansi-l1-1-0.dll     3 imports
+  ext-ms-win-rtcore-ntuser-window-l1-1-0.dll          1 imports
+  libHttpClient.GDK.dll                              38 imports
+  xapu.dll                                            5 imports
+  xg_xs.dll                                           2 imports
+  xmem.dll                                           12 imports
+
+=== SELECTED DLL IMPORTS (full) ===
+  [d3d12_xs.dll]
+      D3D12ConfigureVirtualMemoryX
+      D3D12SerializeVersionedRootSignature
+      D3D12XboxCreateDevice
+  [xmem.dll]
+      XMemAlloc
+      XMemAllocDefault
+      XMemAllocatePhysicalPages
+      XMemFree
+      XMemFreeDefault
+      XMemFreePhysicalPages
+      XMemGetWorkingSetStatistics
+      XMemIsToolsMemAvailable
+      XMemMapPhysicalPages
+      XMemMapPhysicalPagesScatter
+      XMemTransferMemory
+      XMemVirtualAlloc
+  [XCRDAPI.dll]
+      DStorageGetFactory
+  [api-ms-win-core-file-l1-1-0.dll]
+      CreateDirectoryW
+      CreateFileW
+      DeleteFileW
+      FileTimeToLocalFileTime
+      FindClose
+      FindFirstFileW
+      FindNextFileW
+      FlushFileBuffers
+      GetDiskFreeSpaceExW
+      GetFileAttributesA
+      GetFileAttributesExW
+      GetFileAttributesW
+      GetFileSizeEx
+      GetFileTime
+      LocalFileTimeToFileTime
+      ReadFile
+      RemoveDirectoryW
+      SetEndOfFile
+      SetFileAttributesW
+      SetFilePointerEx
+      SetFileTime
+      WriteFile
+  [api-ms-win-core-libraryloader-l1-2-0.dll]
+      FreeLibrary
+      GetModuleFileNameA
+      GetModuleFileNameW
+      GetModuleHandleA
+      GetModuleHandleW
+      GetProcAddress
+      LoadLibraryExA
+      LoadLibraryExW
+
+=== TLS DIRECTORY ===
+  RawDataStart   VA 0x14af3d000
+  RawDataEnd     VA 0x14af3e480
+  AddressOfIndex VA 0x146e08b2c  (-> _tls_index)
+  CallBacks      VA 0x146791a18
+  ZeroFillSize   0x0  Characteristics 0x500000
+    TLS callback[0] VA 0x1455dd4f4 (RVA 0x55dd4f4)
+    TLS callback[1] VA 0x1455e2ebc (RVA 0x55e2ebc)
+
+=== .pdata (RUNTIME_FUNCTION) ===
+  299,257 function ranges (3,591,084 bytes)
+  RVA 0x2478b30 in function 0x2478440..0x2479682 (size 0x1242, unwind 0x67aaad8)
+  RVA 0x2478dc7 in function 0x2478440..0x2479682 (size 0x1242, unwind 0x67aaad8)
+  RVA 0x2478dea in function 0x2478440..0x2479682 (size 0x1242, unwind 0x67aaad8)
+  RVA 0x2237178 in function 0x2236e00..0x22371bd (size 0x3bd, unwind 0x67a0dc0)
+  RVA 0x56a1ec8 in function 0x56a1ec8..0x56a1eda (size 0x12, unwind 0x6798e40)
+
+=== KEY STRINGS (ASCII + UTF-16LE, first hit) ===
+  appdata0.rpf                    : not found
+  G:\                             : ASCII VA 0x141dad273 (file 0x1dac673, .text)
+  game:                           : not found
+  xgameruntime.dll                : UTF16 VA 0x14678e9a0 (file 0x678d7a0, .rdata)
+  QueryApiImpl                    : ASCII VA 0x14678d8b8 (file 0x678c6b8, .rdata)
+  InitializeApiImplEx2            : ASCII VA 0x14678e1a8 (file 0x678cfa8, .rdata)
+  XErrorReport                    : ASCII VA 0x14678d550 (file 0x678c350, .rdata)
+  DStorageGetFactory              : ASCII VA 0x146797388 (file 0x6796188, .rdata)
+  XMemAllocatePhysicalPages       : ASCII VA 0x146796644 (file 0x6795444, .rdata)
+  d3d12_xs.dll                    : ASCII VA 0x146798929 (file 0x6797729, .rdata)
+  XCRDAPI.dll                     : ASCII VA 0x146798ba4 (file 0x67979a4, .rdata)
+  shaders.rpf                     : not found
+  common.rpf                      : not found
+  D3D12XboxCreateDevice           : ASCII VA 0x146796b3a (file 0x679593a, .rdata)
+  game_scarlett_master.exe        : ASCII VA 0x146791a78 (file 0x6790878, .rdata)
+
+=== KEY CONSTANTS / GLOBALS (VA -> file offset -> 16 bytes) ===
+  0x1461e0658  RVA 0x61e0658  file 0x61df458  bytes e4 de 02 61 59 af 09 4b b9 99 b4 4d 73 f0 9b 24  qwords 0x4b09af596102dee4 0x249bf0734db499b9
+      GUID = {6102DEE4-AF59-4B09-b9-99-b4-4d-73-f0-9b-24}
+  0x1461e0668  RVA 0x61e0668  file 0x61df468  bytes 90 78 82 c3 24 40 4c 47 98 cf 64 5b 51 dc 48 74  qwords 0x474c4024c3827890 0x7448dc515b64cf98
+      GUID = {C3827890-4024-474C-98-cf-64-5b-51-dc-48-74}
+  0x14615c190  RVA 0x615c190  file 0x615af90  bytes 00 00 00 00 02 00 00 00 01 00 00 00 00 00 00 00  qwords 0x0000000200000000 0x0000000000000001
+  0x14615c1c0  RVA 0x615c1c0  file 0x615afc0  bytes 02 02 01 00 00 00 00 00 00 00 00 00 00 00 00 00  qwords 0x0000000000010202 0x0000000000000000
+  0x148759d00  RVA 0x8759d00  file 0x8758900: beyond file (BSS / zero-fill section, no raw bytes)
+  0x1475e72a0  RVA 0x75e72a0  file 0x75e5ea0: beyond file (BSS / zero-fill section, no raw bytes)
+  0x1475e7300  RVA 0x75e7300  file 0x75e5f00: beyond file (BSS / zero-fill section, no raw bytes)
+  0x1498f84ac  RVA 0x98f84ac  file 0x98f70ac: beyond file (BSS / zero-fill section, no raw bytes)

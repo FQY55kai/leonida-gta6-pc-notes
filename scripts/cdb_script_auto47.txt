@@ -1,0 +1,15 @@
+.echo ===AUTO47: which failure class returns false===
+sxe av
+sxe 80000003
+bm gta6rt!*D3D12XboxCreateDevice*
+g
+.echo ===ANCHOR===
+bc *
+bp 00000001424787a7 ".echo ===FAIL_JS_PATH===; r esi; g"
+bp 00000001424787a9 ".echo ===RETURN_PATH===; r esi; g"
+bp 00000001419f4f58 ".echo ===FINAL_ASSERT===; r; kb"
+.echo ===BL===
+bl
+g
+.echo ===DONE===
+q

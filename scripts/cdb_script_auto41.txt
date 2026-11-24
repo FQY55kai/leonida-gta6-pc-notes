@@ -1,0 +1,17 @@
+sxe av
+sxe 80000003
+g
+.echo ===GUID @0x1461e0678===
+dq 00000001461e0678 L2
+.echo ===GUID @0x1461e0658 / 0668===
+dq 00000001461e0658 L4
+.echo ===DEVICE VTABLE SLOT 40..47===
+dps poi(poi(0000000148759d00))+140 L8
+.echo ===RETURN PATH 0x1424787a0===
+u 00000001424787a0 L30
+.echo ===TAIL CALL===
+u 000000014247961d L36
+.echo ===LASTEVENT+REGS===
+.lastevent
+r
+q
